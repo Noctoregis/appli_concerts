@@ -18,7 +18,4 @@
 //= require jquery.fileupload
 //= require cloudinary/jquery.cloudinary
 //= require attachinary
-// app/assets/javascripts/document.coffee
-$(document).ready ->
-  $('.attachinary-input').attachinary()
 //= require_tree .

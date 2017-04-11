@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   get 'welcome/index'
 
-  ressources: concerts
+  resources :concerts, only: [:show, :new, :create]
 
-  root 'welcome/index'
+  root to: "concerts#index"
+  root 'welcome#index'
 
   mount Attachinary::Engine => "/attachinary"
 
